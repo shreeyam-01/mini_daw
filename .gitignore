@@ -1,0 +1,15 @@
+# Visual Studio
+.vs/
+Builds/
+*.VC.db
+*.VC.opendb
+
+# JUCE build outputs
+Binaries/
+Build/
+
+# Compiled files
+*.exe
+*.obj
+*.pdb
+*.ilk
