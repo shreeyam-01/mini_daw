@@ -49,7 +49,7 @@ MainComponent::MainComponent()
         float val = (float)volumeSlider.getValue();
         volume.store(val);
         
-        DBG("Volumeeeeee: " + juce::String(val));
+        DBG("Volume 2: " + juce::String(val));
     };
 
     waveformSelector.onChange = [this]() {
