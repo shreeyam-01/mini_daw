@@ -21,7 +21,7 @@ MainComponent::MainComponent()
         float val = (float)controls.volumeSlider.getValue();
         volume.store(val);
         
-        DBG("Volume 3 agian try: " + juce::String(val));
+        DBG("Volume: " + juce::String(val));
     };
 
     controls.waveformSelector.onChange = [this]() {
