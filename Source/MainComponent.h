@@ -2,6 +2,8 @@
 
 #include <JuceHeader.h>
 #include "Oscillator.h"
+#include "uiControl.h"
+#include "calculator.h"
 
 class MainComponent  : public juce::AudioAppComponent
 {
@@ -17,25 +19,16 @@ public:
     void resized() override;
 
 private:
+    // DSP
     Oscillator oscillator;
-    double currentSampleRate = 44100.0;
-    double phase = 0.0;
-    double phaseIncrement = 0.0;
 
-    int waveformType = 0;
+    // GUI
+    uiControl controls;
 
-    juce::Slider frequencySlider; // frequency and volume
-    juce::Slider volumeSlider;
+ 
 
-    juce::Label frequencyLabel;
-    juce::Label volumeLabel;
-
-    // wavefrom selector
-    juce::ComboBox waveformSelector;
-    juce::Label waveformLabel;
-
-    std::atomic<double> frequency{ 440.0 };
     std::atomic<float> volume{ 0.2f };
+    double currentSampleRate = 44100.0;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
 };

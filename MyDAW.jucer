@@ -4,6 +4,10 @@
               addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
   <MAINGROUP id="HDFOZn" name="MyDAW">
     <GROUP id="{69D3090B-600B-06B5-8F89-D21752205E1F}" name="Source">
+      <FILE id="L0QSNj" name="calculator.cpp" compile="1" resource="0" file="Source/calculator.cpp"/>
+      <FILE id="XUnLdk" name="calculator.h" compile="0" resource="0" file="Source/calculator.h"/>
+      <FILE id="Jtu0Vp" name="uiControl.cpp" compile="1" resource="0" file="Source/uiControl.cpp"/>
+      <FILE id="EaySzy" name="uiControl.h" compile="0" resource="0" file="Source/uiControl.h"/>
       <FILE id="GCEIVB" name="Oscillator.cpp" compile="1" resource="0" file="Source/Oscillator.cpp"/>
       <FILE id="qtGbVt" name="Oscillator.h" compile="0" resource="0" file="Source/Oscillator.h"/>
       <FILE id="kSpop7" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
